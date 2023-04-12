@@ -14,7 +14,7 @@ APIKEY=yourownkey. Put the .env file into the root directory of project.
 
 ## Run the project locally using Eclipse
 1. **Download** and unzip the source repositoryor **clone** git repository:
-      git clone https://github.com:sisufuyu/free-assignment.git
+      ```git clone https://github.com:sisufuyu/free-assignment.git```
 
 2. **Start** eclipse
 
@@ -30,7 +30,7 @@ APIKEY=yourownkey. Put the .env file into the root directory of project.
 The project has two endpoints:
 * POST validate_ssn
     * Request
-        *ssn and country_code as input parameter in JSON body
+        * ssn and country_code as input parameter in JSON body
         * Only supports country_code: FI supported currently
     * Response
         * ssn_valid (true/false)
