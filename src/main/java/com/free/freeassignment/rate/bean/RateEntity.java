@@ -18,7 +18,7 @@ public class RateEntity {
 	private String to;
 	private BigDecimal rate;
 
-	private Dotenv dotenv = Dotenv.load();
+	private Dotenv dotenv = Dotenv.configure().ignoreIfMissing().load();
 	private String apikey = dotenv.get("APIKEY");
 
 	public RateEntity() {
