@@ -12,7 +12,8 @@ For building and running the application you need:
 This project fetchs exchange rates from https://apilayer.com/marketplace/exchangerates_data-api, subscribes to it and get your own API Key and create a .env file with 
 APIKEY=yourownkey. Put the .env file into the root directory of project. 
 
-## Run the project locally using Eclipse
+## Run the project locally
+* **Using Eclipse**
 1. **Download** and unzip the source repositoryor **clone** git repository:
       ```git clone https://github.com:sisufuyu/free-assignment.git```
 
@@ -25,6 +26,12 @@ APIKEY=yourownkey. Put the .env file into the root directory of project.
 5. **Browse** to the directory where you save the project and then **click** on _"Finish"_<br>
 
 6. **Click** right mouse button on the FreeAssignmentApplication.java and **click** on "Run As" -> "Java Application"
+
+* **Using Docker**
+The project is dockerized also, you can pull it:
+``` docker pull sisufuyu/free-assignment:latest ```
+and run it:
+``` docker run -p8000:8080 sisufuyu/free-assignment:latest ```
 
 ## Postman examples
 The project has two endpoints:
