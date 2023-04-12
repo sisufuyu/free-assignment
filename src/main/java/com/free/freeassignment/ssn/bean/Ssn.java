@@ -4,6 +4,8 @@ import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
 import java.util.List;
 
+import com.free.freeassignment.ssn.exception.CountryCodeNotFoundException;
+
 public class Ssn {
 	private String ssn;
 	private String country_code;
@@ -45,7 +47,6 @@ public class Ssn {
 		try {
 			birthday = LocalDate.parse(date);
 		} catch (DateTimeParseException e) {
-			System.out.println("birthday wrong");
 			return false;
 		}
 
@@ -54,7 +55,6 @@ public class Ssn {
 		}
 
 		String individualString = this.ssn.substring(7, 10);
-		System.out.println(individualString);
 
 		int individualNumber = Integer.parseInt(individualString);
 
@@ -79,11 +79,10 @@ public class Ssn {
 		return true;
 	}
 
-	public boolean validateCountryCode() {
-		if (this.country_code.toLowerCase().equals("fi")) {
-			return true;
+	public void validateCountryCode() throws CountryCodeNotFoundException {
+		if (!country_code.equals("FI")) {
+			throw new CountryCodeNotFoundException("Only supports country code FI now");
 		}
-		return false;
 	}
 
 	@Override

@@ -19,7 +19,7 @@ import com.free.freeassignment.rate.exception.FetchRateException;
 public class RateController {
 	@GetMapping("/exchange_amount")
 	public ExchangeTo exchange_amount(@RequestParam String from, @RequestParam String to,
-			@RequestParam String amount) throws Exception {
+			@RequestParam(name = "from_amount") String amount) throws Exception {
 		ExchangeRate exchange_rate = new ExchangeRate(from, to, new BigDecimal(amount));
 
 		return exchange_rate.exchange();
