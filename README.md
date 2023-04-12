@@ -12,22 +12,21 @@ For building and running the application you need:
 This project fetchs exchange rates from https://apilayer.com/marketplace/exchangerates_data-api, subscribes to it and get your own API Key and create a .env file with 
 APIKEY=yourownkey. Put the .env file into the root directory of project. 
 
-## Run the project locally
-* **Using Eclipse**
-      1. **Download** and unzip the source repositoryor **clone** git repository:
-            ```git clone https://github.com:sisufuyu/free-assignment.git```
+## Run the project locally Using Eclipse
+1. **Download** and unzip the source repositoryor **clone** git repository:
+      ```git clone https://github.com:sisufuyu/free-assignment.git```
 
-      2. **Start** eclipse
+2. **Start** eclipse
 
-      3. **Import** maven project into eclipse by **select** _"File" &#8594; "Import..."_<br>
+3. **Import** maven project into eclipse by **select** _"File" &#8594; "Import..."_<br>
 
-      4. **Write** "maven" in _"Select an import source"_ field, **select** _"Existing Maven Projects"_ and then **click** on _"Next >"_<br>
+4. **Write** "maven" in _"Select an import source"_ field, **select** _"Existing Maven Projects"_ and then **click** on _"Next >"_<br>
 
-      5. **Browse** to the directory where you save the project and then **click** on _"Finish"_<br>
+5. **Browse** to the directory where you save the project and then **click** on _"Finish"_<br>
 
-      6. **Click** right mouse button on the FreeAssignmentApplication.java and **click** on "Run As" -> "Java Application"
+6. **Click** right mouse button on the FreeAssignmentApplication.java and **click** on "Run As" -> "Java Application"
 
-* **Using Docker**
+## Run the project locally Using Docker
 The project is dockerized also, you can pull it:
 ``` docker pull sisufuyu/free-assignment:latest ```
 and run it:
