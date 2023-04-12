@@ -14,7 +14,7 @@ APIKEY=yourownkey. Put the .env file into the root directory of project.
 
 ## Run the project locally using Eclipse
     1. **Download** and unzip the source repositoryor **clone** git repository:
-      ```git clone https://github.com:sisufuyu/free-assignment.git```
+      git clone https://github.com:sisufuyu/free-assignment.git
 
     2. **Start** eclipse
 
