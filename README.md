@@ -12,7 +12,7 @@ For building and running the application you need:
 This project fetchs exchange rates from https://apilayer.com/marketplace/exchangerates_data-api, subscribes to it and get your own API Key and create a .env file with 
 APIKEY=yourownkey. Put the .env file into the root directory of project. 
 
-## Run the project locally
+## Run the project locally using Eclipse
     1. **Download** and unzip the source repositoryor **clone** git repository:
       ```git clone https://github.com:sisufuyu/free-assignment.git```
 
