@@ -38,7 +38,7 @@ The project has two endpoints:
 * POST validate_ssn
     * Request
         * ssn and country_code as input parameter in JSON body
-        * Only supports country_code: FI supported currently
+        * country_code: Only supports FI supported currently
     * Response
         * ssn_valid (true/false)
 ![image](https://user-images.githubusercontent.com/20355911/231526842-61b7c1c7-331a-41fd-afbf-e38eb46d5c4d.png)
